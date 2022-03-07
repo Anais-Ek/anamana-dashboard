@@ -53,10 +53,10 @@
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li a.active{
-  background: #081D45;
+  background: #EAC5B8;
 }
 .sidebar .nav-links li a:hover{
-  background: #081D45;
+  background: #EAC5B8;
 }
 .sidebar .nav-links li i{
   min-width: 60px;
@@ -127,8 +127,8 @@ nav .search-box input{
   height: 100%;
   width: 100%;
   outline: none;
-  background: #F5F6FA;
-  border: 2px solid #EFEEF1;
+  background: #fcf6f3;
+  border: 2px solid #faf0ea;
   border-radius: 6px;
   font-size: 18px;
   padding: 0 15px;
@@ -137,7 +137,7 @@ nav .search-box .bx-search{
   position: absolute;
   height: 40px;
   width: 40px;
-  background: #2697FF;
+  background: #EAC5B8;
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
