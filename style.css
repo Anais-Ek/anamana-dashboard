@@ -151,8 +151,8 @@ nav .search-box .bx-search{
 .home-section nav .profile-details{
   display: flex;
   align-items: center;
-  background: #F5F6FA;
-  border: 2px solid #EFEEF1;
+  background: #EAC5B8;
+  border: 2px solid #EAC5B8;
   border-radius: 6px;
   height: 50px;
   min-width: 190px;
@@ -423,3 +423,58 @@ nav .profile-details i{
   margin-left:  7px;
   margin-top: 20px;
 }
+
+.iconadmin{
+  width: 40px;
+  height: 40px;
+  margin-left:  7px;
+  margin-top: 2px;
+}
+
+
+.login{
+  background: #C5ACA3;
+  border-radius: 13px;
+}
+  
+
+.login .page{
+  background: #F9ECE5;
+  border-radius: 13px;
+  position: static;
+  width: 644px;
+  height: 377px;
+  left: 394px;
+  top: 369.5px;
+
+}
+
+
+body {
+	background: #F9ECE5 !important;	
+}
+
+.wrapper {	
+	margin-top: 80px;
+  margin-bottom: 80px;
+
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background: #C5ACA3;
+  border: 1px solid rgba(0,0,0,0.1);  
+  border-radius: 13px;
+  position: static;
+  width: 644px;
+  height: 377px;
+  left: 394px;
+  top: 369.5px;
+
+}
+
+
+
+
