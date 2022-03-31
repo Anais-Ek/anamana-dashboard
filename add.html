@@ -21,13 +21,13 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="index.html" class="active">
+          <a href="index.html" >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Tableau de bord</span>
           </a>
         </li>
         <li>
-          <a href="products.html">
+          <a href="products.html" class="active">
             <i class='bx bx-box' ></i>
             <span class="links_name">Produits</span>
           </a>
@@ -57,7 +57,6 @@
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Tableau de bord</span>
       </div>
       <div class="search-box">
         <input type="text" placeholder="Rechercher...">
@@ -70,48 +69,49 @@
     </nav>
 
     <div class="home-content">
-      <div class="overview-boxes">
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Ajouter un produit</div>
-          </div>
-          <i class='bx bx-plus cart'></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">TEST</div>
-            <div class="number">38,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <h1>Ajouter un produit</h1>
+          <form method="post" action="">
+            <div class="champ">
+              <label for="image">Photo:</label>
+              <input type="file" name="imagep" id="imagep" required>
             </div>
-          </div>
-          <i class='bx bxs-cart-add cart two' ></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">TEST</div>
-            <div class="number">$12,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
+            <div class="champ">
+              <label for="name">Nom : </label>
+              <input type="text" id="name">
             </div>
-          </div>
-          <i class='bx bx-cart cart three' ></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">TEST</div>
-            <div class="number">11,086</div>
-            <div class="indicator">
-              <i class='bx bx-down-arrow-alt down'></i>
+            <div class="champ">
+              <label for="category">Catégorie :</label>
+              <input type="text" id="category">
             </div>
-          </div>
-          <i class='bx bxs-cart-download cart four' ></i>
-        </div>
-      </div>
-      </div>
-    </div>
+            <div class="champ">
+              <label for="price">Prix :</label>
+              <input type="text" id="price">
+            </div>
+            <div class="champ">
+              <label for="stock">Stock :</label>
+              <input type="text" id="stock">
+            </div>
+            <div class="champ">
+              <label for="image">Plan:</label>
+              <input type="file" name="imagemap" id="imagemap" required>
+            </div>
+            <div class="form-item">
+              <label for="color">Couleur:</label>
+              <select name="color" id="color">
+                  <option value="black">Noir</option>
+                  <option value="red">Rouge </option>
+                  <option value="blue">Bleu</option>
+                  <option value="green">Vert</option>
+                  <option value="purple">Violet</option>
+                  <option value="orange">Orange</option>
 
-    <div class="e46_593">
+              </select>
+          </div>
+          </form>
+        </div>
+      </div>
 
     </div>
 

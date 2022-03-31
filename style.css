@@ -195,7 +195,7 @@ nav .profile-details i{
   background: #fff;
   padding: 15px 14px;
   border-radius: 12px;
-  box-shadow: 0 5px 10px #59564D;
+  box-shadow: 0 5px 10px 59564D;
 }
 .overview-boxes .box-topic{
   font-size: 20px;
@@ -264,7 +264,7 @@ nav .profile-details i{
 
 /* left box */
 .home-content .sales-boxes .recent-sales{
-  width: 65%;
+  width: 95%;
   background: #fff;
   padding: 20px 30px;
   margin: 0 20px;
@@ -299,10 +299,12 @@ nav .profile-details i{
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 20px;
+
 }
 .sales-boxes .box .button a{
   color: #fff;
-  background: #0A2558;
+  background: #EAC5B8;
   padding: 4px 12px;
   font-size: 15px;
   font-weight: 400;
@@ -311,7 +313,7 @@ nav .profile-details i{
   transition: all 0.3s ease;
 }
 .sales-boxes .box .button a:hover{
-  background:  #0d3073;
+  background:  #EAC5B8;
 }
 
 /* Right box */
@@ -475,17 +477,29 @@ body {
 
 }
 
-.e46_593 { 
-	background-color:rgba(234.00000125169754, 197.0000034570694, 184.00000423192978, 1);
-	width:410px;
-	height:314px;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
 }
 
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
 
 
+#names {
+  border:1px solid ;
+  
+  text-align:left;
+}
+
+#names tr td  , #names tr th {
+  padding:1em;
+}
 
 
