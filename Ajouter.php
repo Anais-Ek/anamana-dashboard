@@ -85,8 +85,6 @@
 				placeholder="Entrer la catégorie" name="txtCategorie" required>
                 </p>
 
-			
-
                 <p><label><b>Couleur</b></label>
                 <input class="zonetext" type="text" 
 				placeholder="Entrer la couleur" name="txtCouleur" required>
