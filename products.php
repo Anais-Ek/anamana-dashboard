@@ -1,3 +1,5 @@
+<?php require_once('connexion.php');?>
+
 <!DOCTYPE html>
 
 <html lang="fr" dir="ltr">
@@ -5,6 +7,8 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="main.js">
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
@@ -21,19 +25,19 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="index.html" >
+          <a href="index.php" >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Tableau de bord</span>
           </a>
         </li>
         <li>
-          <a href="products.html" class="active">
+          <a href="products.php" class="active">
             <i class='bx bx-box' ></i>
             <span class="links_name">Produits</span>
           </a>
         </li>
         <li>
-          <a href="statistics.html">
+          <a href="statistics.php"  >
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Statistiques</span>
           </a>
@@ -41,11 +45,11 @@
         <li>
           <a href="#">
             <i class='bx bx-cog' ></i>
-            <span class="links_name">Paramètres</span>
+            <span class="links_name">Paramètres ?</span>
           </a>
         </li>
         <li class="log_out">
-          <a href="login.html">
+          <a href="deconnecter.php">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Déconnexion</span>
           </a>
@@ -57,6 +61,7 @@
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Produits</span>
       </div>
       <div class="search-box">
         <input type="text" placeholder="Rechercher...">
@@ -69,53 +74,61 @@
     </nav>
 
     <div class="home-content">
-      <div class="sales-boxes">
-        <div class="recent-sales box">
-          <h1>Ajouter un produit</h1>
-          <form method="post" action="">
-            <div class="champ">
-              <label for="image">Photo:</label>
-              <input type="file" name="imagep" id="imagep" required>
-            </div>
-            <div class="champ">
-              <label for="name">Nom : </label>
-              <input type="text" id="name">
-            </div>
-            <div class="champ">
-              <label for="category">Catégorie :</label>
-              <input type="text" id="category">
-            </div>
-            <div class="champ">
-              <label for="price">Prix :</label>
-              <input type="text" id="price">
-            </div>
-            <div class="champ">
-              <label for="stock">Stock :</label>
-              <input type="text" id="stock">
-            </div>
-            <div class="champ">
-              <label for="image">Plan:</label>
-              <input type="file" name="imagemap" id="imagemap" required>
-            </div>
-            <div class="form-item">
-              <label for="color">Couleur:</label>
-              <select name="color" id="color">
-                  <option value="black">Noir</option>
-                  <option value="red">Rouge </option>
-                  <option value="blue">Bleu</option>
-                  <option value="green">Vert</option>
-                  <option value="purple">Violet</option>
-                  <option value="orange">Orange</option>
-
-              </select>
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Nombre de produits</div>
+            <?php
+	            $reqselect="select * from produits";
+	            $resultat=mysqli_query($cnanamana,$reqselect);
+	            $nbr=mysqli_num_rows($resultat);
+	            echo "<p> <b> ".$nbr."</b> Produits </p>";
+	        ?>
           </div>
-          </form>
         </div>
       </div>
 
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Liste des produits</div>
+          <p></p>
+          <div class="button">
+            <a href="Ajouter.php">Ajouter un nouveau produit</a>
+            <p></p>
+          </div>
+        
+      <table width="100%" border="1">
+        <tbody>
+          <tr>
+          <th>Catégorie</th>
+          <th>Couleur</th>
+          <th>Prix</th>
+          <th>Photo</th>
+          <th>Plan</th>
+          <th>Supprimer/Modifier</th>
+          </tr>
+    
+	      <?php
+	      while($ligne=mysqli_fetch_assoc($resultat))
+	      {
+	      ?>
+	   
+          <tr>
+            <td><?php echo $ligne['CATEGORIE']; ?></td>
+            <td><?php echo $ligne['COULEUR']; ?></td>
+            <td><?php echo $ligne['PRIX']; ?></td>
+            <td><img width="50px" height="50px" src="<?php echo $ligne['PHOTO']; ?>"></td>
+            <td><img width="50px" height="50px" src="<?php echo $ligne['PLAN']; ?>"></td>
+            <td><a href="supprimer.php?supCar=<?php echo $ligne['CATEGORIE']; ?>"><img src="images/supprimer.png" width="50px" height="50px"></a>
+            <a href="modifier.php?mod=<?php echo $ligne['CATEGORIE']; ?>"><img src="images/modifier.png" width="50px" height="50px"></a></td>
+          </tr>
+        <?php } ?>
+
+          </tbody>
+        </table>
+      </div>
+      </div>
     </div>
-
-
   </section>
 
   <script>

@@ -1,3 +1,5 @@
+<?php require_once('connexion.php');?>
+
 <!DOCTYPE html>
 
 <html lang="fr" dir="ltr">
@@ -6,13 +8,11 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="main.js">
-
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="/images/testicon.png" >
+    <link rel="shortcut icon" href="/images/test.jpeg" >
 
    </head>
 <body>
@@ -23,19 +23,19 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="index.html" >
+          <a href="index.php" class="active">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Tableau de bord</span>
           </a>
         </li>
         <li>
-          <a href="products.html" class="active">
+          <a href="products.php">
             <i class='bx bx-box' ></i>
             <span class="links_name">Produits</span>
           </a>
         </li>
         <li>
-          <a href="statistics.html"  >
+          <a href="statistics.php">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Statistiques</span>
           </a>
@@ -43,11 +43,11 @@
         <li>
           <a href="#">
             <i class='bx bx-cog' ></i>
-            <span class="links_name">Paramètres ?</span>
+            <span class="links_name">Paramètres</span>
           </a>
         </li>
         <li class="log_out">
-          <a href="login.html">
+          <a href="login.php">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Déconnexion</span>
           </a>
@@ -59,7 +59,7 @@
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Produits</span>
+        <span class="dashboard">Tableau de bord</span>
       </div>
       <div class="search-box">
         <input type="text" placeholder="Rechercher...">
@@ -73,99 +73,42 @@
 
     <div class="home-content">
       <div class="overview-boxes">
+        
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Order</div>
-            <div class="number">40,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
-            </div>
+            <div class="box-topic">Ajouter un produit</div>
           </div>
-          <i class='bx bx-cart-alt cart'></i>
+          <i class='bx bx-plus cart'></i>
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Sales</div>
+            <div class="box-topic">TEST</div>
             <div class="number">38,876</div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
             </div>
           </div>
           <i class='bx bxs-cart-add cart two' ></i>
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Profit</div>
+            <div class="box-topic">TEST</div>
             <div class="number">$12,876</div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
             </div>
           </div>
           <i class='bx bx-cart cart three' ></i>
         </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Return</div>
-            <div class="number">11,086</div>
-            <div class="indicator">
-              <i class='bx bx-down-arrow-alt down'></i>
-              <span class="text">Down From Today</span>
-            </div>
-          </div>
-          <i class='bx bxs-cart-download cart four' ></i>
-        </div>
       </div>
-
-      <div class="sales-boxes">
-        <div class="recent-sales box">
-          <div class="title">Liste des produits</div>
-          <p></p>
-          <div class="button">
-            <a href="add.html">Ajouter un nouveau produit</a>
-            <p></p>
-          </div>
-          <div class="sales-details"style="overflow-y:auto;">
-            <table>
-              <thead>
-                <tr>
-                  <th>NOM</th>
-                  <th>CATÉGORIE</th>
-                  <th>COULEUR</th>
-                  <th>PHOTO</th>
-                  <th>PLAN</th>
-                  <th>PRIX</th>
-                  <th>STOCK</th>
-                </tr>
-              <thead>
-              <tbody>
-                <tr>
-                  <td><img class="iconvda" src="images/ANALOGO.PNG" alt="" /></td>
-                  <td>50mt</td>
-                  <td>9mm</td>
-                  <td>1/2"</td>
-                  <td>Kangal / Coil</td>
-                  <td>1/2"</td>
-                  <td>Kangal / Coil</td>
-                </tr>
-                <tr>
-                  <td>CES-9000</td>
-                  <td>50mt</td>
-                  <td>9mm</td>
-                  <td>1/2"</td>
-                  <td>Kangal / Coil</td>
-                  <td>1/2"</td>
-                  <td>Kangal / Coil</td>
-                </tr>
-              </tbody>
-            </table>
-          
-          </div>  
-        </div>
       </div>
     </div>
+
+    <div class="e46_593">
+
+    </div>
+
+
   </section>
 
   <script>
