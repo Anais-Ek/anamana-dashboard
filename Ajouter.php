@@ -37,7 +37,7 @@
 				echo "Insertion des données validés";
 			}else{
 				echo "Echec d'insertion des données !<BR/>";
-				echo ($cnanamana->error)
+				echo ($cnanamana->error);
 			}
 		}
 		else die('erreur connexion base de données..')
