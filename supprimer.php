@@ -1,4 +1,5 @@
-<?php require('connexion.php');?>
+<?php $cnanamana=new mysqli("51.159.27.252:50992","anamana","Fenelon@2022","anamana");?>
+
 <!doctype html>
 <html>
 
