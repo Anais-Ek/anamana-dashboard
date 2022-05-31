@@ -451,6 +451,20 @@ nav .profile-details i{
 
 }
 
+#formadd{
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background: #C5ACA3;
+  border: 1px solid rgba(0,0,0,0.1);  
+  border-radius: 13px;
+  position: static;
+  width: 644px;
+  height: 377px;
+  left: 394px;
+  top: 369.5px;
+}
+
 
 body {
 	background: #F9ECE5 !important;	
@@ -501,4 +515,6 @@ tr:nth-child(even){background-color: #f2f2f2}
 #names tr td  , #names tr th {
   padding:1em;
 }
+
+
 

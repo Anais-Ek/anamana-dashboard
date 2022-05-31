@@ -1,44 +1,115 @@
 <?php require_once('connexion.php');?>
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/images/test.jpeg" >
 
 </head>
 
 <body>
 
 
+<div class="sidebar">
+    <div class="logo-details">
+      <img class="iconvda" src="images/ANALOGO.PNG" alt="" />
+      <span class="logo_name">Anamana</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.php" >
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Tableau de bord</span>
+          </a>
+        </li>
+        <li>
+          <a href="products.php" class="active">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Produits</span>
+          </a>
+        </li>
+        <li>
+          <a href="statistics.php">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="links_name">Statistiques</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Paramètres</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="login.php">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Déconnexion</span>
+          </a>
+        </li>
+      </ul>
+</div>
 
-<div id="container">
-	
-	<form name="formadd" action="" method="post" class="formulaire" enctype="multipart/form-data">
+
+<section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Ajouter un produit</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Rechercher...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <img class="iconadmin" src="images/test.jpeg" alt="">
+        <span class="admin_name">Administrateur</span>
+      </div>
+    </nav>
+
+
+	<div class="home-content">
+
+	<form name="formadd" action="" method="post" enctype="multipart/form-data">
 		<h2 align="center">Ajouter un nouveau produit</h2>
                 
-                <label><b>Catégorie</b></label>
+                <p><label><b>Catégorie</b></label>
                 <input class="zonetext" type="text" 
 				placeholder="Entrer la catégorie" name="txtCategorie" required>
+                </p>
 
-                <label><b>Couleur</b></label>
+			
+
+                <p><label><b>Couleur</b></label>
                 <input class="zonetext" type="text" 
 				placeholder="Entrer la couleur" name="txtCouleur" required>
+				</p>
 
-               <label><b>Prix</b></label>
+				<p><label><b>Prix</b></label>
                 <input class="zonetext" type="text" 
 				placeholder="Entrer le prix" name="txtP" required>
+				</p>
                 
-                <label><b>Photo</b></label>
+                <p><label><b>Photo</b></label>
                 <input class="zonetext" type="file" 
 				placeholder="choisir une photo" name="txtphoto" required>
+				</p>
 
-				<label><b>Plan</b></label>
+				<p><label><b>Plan</b></label>
                 <input class="zonetext" type="file" 
 				placeholder="choisir une photo du plan" name="txtplan" required>
+				</p>
                 
-                <input type="submit" id='submit' 
+                <p><input type="submit" id='submit' 
 				class="submit" name="btadd" value='Ajouter' >
+				</p>
                 
 		<p><a href="products.php" class="submit" >Retour dans la liste des produits</a></p>
                 
@@ -88,6 +159,10 @@ if($resultat)
 </label>
 	</form>
 
-</div>
+	</div>
+
+
+	</section>
+
 </body>
 </html>

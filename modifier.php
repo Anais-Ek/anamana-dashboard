@@ -13,7 +13,7 @@
 
     <link rel="shortcut icon" href="/images/test.jpeg" >
 
-   </head>
+</head>
 
 <body>
 
