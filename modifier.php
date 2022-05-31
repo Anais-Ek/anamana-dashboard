@@ -42,12 +42,6 @@
             <span class="links_name">Statistiques</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog' ></i>
-            <span class="links_name">Paramètres</span>
-          </a>
-        </li>
         <li class="log_out">
           <a href="login.php">
             <i class='bx bx-log-out'></i>
@@ -87,7 +81,7 @@
                 <p><label><b>Couleur</b></label>
                 <input class="zonetext" type="text" placeholder="Entrer la couleur" name="txtCouleur" required>
                 </p>
-                
+
                 <p><label><b>Prix</b></label>
                 <input class="zonetext" type="text" placeholder="Entrer le prix" name="txtP" required>
                 </p>

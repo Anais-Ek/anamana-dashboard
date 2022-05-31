@@ -88,12 +88,6 @@
             <span class="links_name">Statistiques</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog' ></i>
-            <span class="links_name">Paramètres</span>
-          </a>
-        </li>
         <li class="log_out">
           <a href="login.php">
             <i class='bx bx-log-out'></i>
@@ -167,7 +161,7 @@
 	</div>
 	</div>
   </div>
-  
+
 	</section>
 
 </body>
