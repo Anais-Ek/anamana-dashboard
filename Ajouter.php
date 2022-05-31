@@ -27,11 +27,11 @@
 			$msg = "Impossible de télécharger l'image";
 		}
 		  
-		$cnanamana=new MySQLi("51.159.27.252:50992","anamana","Fenelon2022","anamana");
+		$cnanamana=new mysqli("51.159.27.252:50992","anamana","Fenelon@2022","anamana");
 		if(!$cnanamana->connect_error)
 		{
 			$query = "INSERT INTO produits (CATEGORIE,COULEUR,PRIX,PHOTO,PLAN) VALUES ('$cat','$couleur','$prix', '$target', '$targetp')";
-			$resultat=mysqli_query($cnanamana,$query);
+			$resultat=$cnanamana->query($query);
 			if($resultat)
 			{
 				echo "Insertion des données validés";
