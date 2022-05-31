@@ -1,5 +1,5 @@
 <?php 
-	require_once('connexion.php');
+	error_reporting(E_ALL);
 
 	if(isset($_POST['btadd']))
 	{
@@ -40,7 +40,7 @@
 				echo ($cnanamana->error);
 			}
 		}
-		else die('erreur connexion base de données..')
+		else die('erreur connexion base de données..');
   	
   	}
 
