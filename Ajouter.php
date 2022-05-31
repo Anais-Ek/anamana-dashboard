@@ -123,6 +123,8 @@
 
 	<div class="home-content">
 	<div class="sales-boxes">
+  <div class="recent-sales box">
+
 
 	<form name="formadd" action="" method="post" enctype="multipart/form-data">
 		<h2 align="center">Ajouter un nouveau produit</h2>
@@ -156,13 +158,16 @@
 				class="submit" name="btadd" value='Ajouter' >
 				</p>
                 
-		<p><a href="products.php" class="submit" >Retour dans la liste des produits</a></p>
+		<p><a href="products.php" class="submit" >Retour à la liste des produits</a></p>
                 
 		<label style="text-align: center;color: #360001;"></label>
 				
 	</form>
+
 	</div>
 	</div>
+  </div>
+  
 	</section>
 
 </body>

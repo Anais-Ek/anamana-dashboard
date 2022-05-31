@@ -74,25 +74,32 @@
     </nav>
 
 	<div class="home-content">
+  <div class="sales-boxes">
+  <div class="recent-sales box">
 	
 	<form name="formadd" action="" method="post" class="formulaire" enctype="multipart/form-data">
 		<h2 align="center">Mettre à Jour un produit</h2>
                 
-                <label><b>Catégorie</b></label>
+                <p><label><b>Catégorie</b></label>
                 <input class="zonetext" type="text" name="txtCategorie" value="<?php echo $_GET['mod'] ?>" >
+                </p>
 
-                <label><b>Couleur</b></label>
+                <p><label><b>Couleur</b></label>
                 <input class="zonetext" type="text" placeholder="Entrer la couleur" name="txtCouleur" required>
-
-               <label><b>Prix</b></label>
+                </p>
+                
+                <p><label><b>Prix</b></label>
                 <input class="zonetext" type="text" placeholder="Entrer le prix" name="txtP" required>
-                
-                <label><b>Photo</b></label>
-				<input class="zonetext" type="file" placeholder="Choisir une photo" name="txtphoto" required>
-				
-				<label><b>Plan</b></label>
+                </p>
+
+                <p><label><b>Photo</b></label>
+				        <input class="zonetext" type="file" placeholder="Choisir une photo" name="txtphoto" required>
+                </p>
+
+				        <p><label><b>Plan</b></label>
                 <input class="zonetext" type="file" placeholder="Choisir une photo" name="txtplan" required>
-                
+                </p>
+
                 <input type="submit" id='submit' class="submit" name="btmod" value='Mettre a Jour' >
                 
 		<p><a href="products.php" class="submit" >Retour à la liste des produits</a></p>
@@ -149,6 +156,8 @@
 	
 	
 	
+</div>
+</div>
 </div>
 
 </section>

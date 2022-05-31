@@ -1,4 +1,4 @@
-<?php require_once('connexion.php');?>
+<?php $cnanamana=new mysqli("51.159.27.252:50992","anamana","Fenelon@2022","anamana");?>
 
 <!DOCTYPE html>
 
@@ -38,12 +38,6 @@
           <a href="statistics.php">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Statistiques</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog' ></i>
-            <span class="links_name">Paramètres</span>
           </a>
         </li>
         <li class="log_out">

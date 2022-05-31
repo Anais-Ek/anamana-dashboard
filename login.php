@@ -1,17 +1,18 @@
-<?php require_once('connexion.php');?>
+<?php $cnanamana=new mysqli("51.159.27.252:50992","anamana","Fenelon@2022","anamana");?>
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-<link rel="stylesheet" href="style.css">
-<style>
-	body{
-    background: #F30;
-}
 
-	
-	</style>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/images/test.jpeg" >
+
 </head>
 
 <body>
@@ -31,9 +32,9 @@
                 <input type="submit" id='submit' class="submit" name="btlogin" value='LOGIN' >
 
 
+<?php 
 
-                 <?php 
-  if(isset($_POST['btlogin'])){
+if(isset($_POST['btlogin'])){
 $req="select * from utilisateurs where nom_utilisateur='".$_POST['txtlogin']."' and mot_de_passe='".$_POST['txtpw']."'";
 if($resultat=mysqli_query($cnanamana,$req)){
 $ligne=mysqli_fetch_assoc($resultat);

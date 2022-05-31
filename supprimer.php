@@ -43,12 +43,6 @@
             <span class="links_name">Statistiques</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog' ></i>
-            <span class="links_name">Paramètres</span>
-          </a>
-        </li>
         <li class="log_out">
           <a href="login.php">
             <i class='bx bx-log-out'></i>
@@ -75,6 +69,8 @@
     </nav>
 
 <div class="home-content">
+<div class="sales-boxes">
+<div class="recent-sales box">
 
 <form name="formulaire" class="formulaire">
 <p><a href="products.php" class="submit" >Retour dans la liste des produits</a></p>
@@ -105,6 +101,8 @@ if (isset($_GET['supCar'])) {
 </form>
 
 
+</div>
+</div>
 </div>
 
 </section>
