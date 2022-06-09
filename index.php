@@ -70,37 +70,26 @@
         
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Ajouter un produit</div>
+            <div class="box-topic">Ajouter un produit </div>
           </div>
-          <i class='bx bx-plus cart'></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">TEST</div>
-            <div class="number">38,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-            </div>
-          </div>
-          <i class='bx bxs-cart-add cart two' ></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">TEST</div>
-            <div class="number">$12,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-            </div>
-          </div>
-          <i class='bx bx-cart cart three' ></i>
-        </div>
+          <a href="Ajouter.php">
+          <i class='bx bxs-cart-add cart' ></i>
+          </a>
+       </div>
       </div>
+      <div class="overview-boxes">
+        
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Accéder à la liste des produits </div>
+          </div>
+          <a href="products.php">
+          <i class='bx bxs-cart-add cart three' ></i>
+          </a>
+       </div>
       </div>
     </div>
 
-    <div class="e46_593">
-
-    </div>
 
 
   </section>
